@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Course Details</title>
+<link rel="stylesheet" href="style.css"/>
+<script>
+	function showFee(){
+		var fee= document.getElementById("fee")
+		fee.innerText="Fee is Rs 8000"
+	}
+</script>
+</head>	
+	<body>
+	<h1>Course Details</h1>
+	<div class="highlight">
+	The following are the list of courses offered
+	</div>
+	<h2>List of courses</h2>	
+	<ul><li>Jdbc</li>
+		<li>Servlets</li>
+		<li>JSP</li>
+	</ul>
+	<button onclick="showFee()">Show Course Fee</button>
+	<h3 id="fee"></h3>
+</body>
+</html>
