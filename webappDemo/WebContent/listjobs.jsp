@@ -35,6 +35,7 @@
 						+ "</td><td class='number'>" + ors.getInt(4) + "</td></tr>");
 				
 			}
+			ors.close();
 		%>
 		
 	</table>
