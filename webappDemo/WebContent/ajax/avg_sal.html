@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+function getAvgSal(){
+	$.get("avg_salary.jsp",{},showAvgSal)
+}
+
+function showAvgSal(result){
+	$("#sal").html(result)
+}
+</script>
+</head>
+<body>
+<button onclick="getAvgSal()">ShowAvgSalary</button>
+<h2 id="sal"></h2>
+<h2></h2>
+</body>
+</html>
